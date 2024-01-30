@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Requests.css">
+    <title>Blood Donation Hub - Requests</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="./Donate.html">Donate</a>
+        <a href="./FindDonors.html">Find Donors</a>
+        <a href="./Request.html">Requests</a>
+        <a href="./History.html">History</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <!-- Requests List -->
+        <section id="requests-list" class="requests-list-section">
+            <h2>Donor Requests</h2>
+            <ul id="requests">
+                <!-- Example request with a Requester, Accept, and Reject buttons -->
+                <li>
+                    <strong>Requester: Jane Doe</strong>
+                    <p>Blood Type: B-</p>
+                    <p>Contact Number: 987-654-3210</p>
+                    <p>Email: jane@example.com</p>
+                    <button class="accept-button" onclick="acceptRequest('Jane Doe')">Accept</button>
+                    <button class="reject-button" onclick="rejectRequest('Jane Doe')">Reject</button>
+                    <hr>
+                </li>
+                <!-- More requests will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+    </div>
+
+    <div id="success-message-container"></div>
+
+    <script src="requests.js"></script>
+
+</body>
+</html>

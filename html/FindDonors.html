@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/FindDonors.css">
+    <title>Blood Donation Hub</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="./Donate.html">Donate</a>
+        <a href="./FindDonors.html">Find Donors</a>
+        <a href="./Request.html">Requests</a>
+        <a href="./History.html">History</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="hero-section" id="hero-section">
+        
+    </div>
+
+    <div class="content">
+        
+        <!-- Search Form -->
+        <section id="search-form" class="search-form-section">
+            <h2>Find Donors</h2>
+            <form action="#" method="post" class="search-form">
+              <label for="bloodType"><h4>Select Blood Type:</h4></label>
+                <select id="bloodType" name="bloodType">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+              <label for="location"><h4>Enter Location:</h4></label>
+                <input type="text" id="location" name="location" placeholder="City, State">
+
+                <label for="contactNumber"><h4>Contact Number:</h4></label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your phone number">
+
+              <label for="email"><h4>Email Address:</h4></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                
+                <input type="submit" value="Search Donors">
+            </form>
+        </section>
+    </div>
+
+
+</body>
+</html>

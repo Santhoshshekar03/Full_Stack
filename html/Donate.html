@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Donate.css">
+    <title>Blood Donation Hub - Donate</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="./Donate.html">Donate</a>
+        <a href="./FindDonors.html">Find Donors</a>
+        <a href="./Request.html">Requests</a>
+        <a href="./History.html">History</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <section id="donation-form" class="donation-form-section">
+            <h2>Donate Blood</h2>
+            <form id="donation-form" onsubmit="return checkEligibility()">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="bloodType">Blood Type:</label>
+                <select id="bloodType" name="bloodType" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <label for="healthCondition">Health Condition:</label>
+                <textarea id="healthCondition" name="healthCondition" required></textarea>
+
+                <input type="submit" value="Donate Now">
+            </form>
+        </section>
+    </div>
+
+    <script src="../js/Donate.js"></script>
+
+</body>
+</html>

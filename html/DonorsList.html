@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/DonorsList.css">
+    <title>Blood Donation Hub - Donors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="./Donate.html">Donate</a>
+        <a href="./FindDonors.html">Find Donors</a>
+        <a href="./Request.html">Requests</a>
+        <a href="./History.html">History</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <!-- Donors List -->
+        <section id="donors-list" class="donors-list-section">
+            <h2>Donors List</h2>
+            <ul id="donors">
+                <!-- Example donor with a Request button -->
+                <li>
+                    <strong>John Doe</strong>
+                    <p>Blood Type: A+</p>
+                    <p>Contact Number: 123-456-7890</p>
+                    <p>Email: john@example.com</p>
+                    <button class="request-button" onclick="requestDonor('John Doe')">Request</button>
+                    <hr>
+                </li>
+                <!-- More donors will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+    </div>
+
+    <div id="success-message-container"></div>
+
+    
+</body>
+</html>
